@@ -1,5 +1,5 @@
-**Date**<br>
-**Course Code & Course Name**<br>
+**oh my god how many times do i have to do this**<br>
+**Course Code & Course **<br>
 **Student's First Name & Last Name**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
