@@ -1,11 +1,11 @@
-**oh my god how many times do i have to do this**<br>
-**Course Code & Course **<br>
-**Student's First Name & Last Na**<br>
+**November 4th, 2024**<br>
+**MPAD2003 Introductory Data Storytelling**<br>
+**Kiran Butter**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
 # Midterm Project: Exploratory Data Analysis (EDA)
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one.
+Use one hashtag symbol (`#`) to create a level 1 heading like this one. - yo did I fix the issue?
 
 ## Foreword
 
