@@ -1,6 +1,6 @@
 **oh my god how many times do i have to do this**<br>
 **Course Code & Course **<br>
-**Student's First Nme & Last Na**<br>
+**Student's First Name & Last Na**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
 # Midterm Project: Exploratory Data Analysis (EDA)
