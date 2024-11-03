@@ -76,6 +76,19 @@ Support your claims by citing relevant sources. Please follow [APA guidelines fo
 
 As Cairo (2016) argues, a data visualization should be truthful...
 
+
+The VIMO analysis is a method used to ensure the quality, accuracy and correctness of a given dataset. In order for a dataset to be accurate, the data values must be valid (not blank or missing and within a valid range) and correct (insert cites). VIMO is an acronym that stands for valid, invalid, missing and outlier values, which is how the dataset will be assessed.
+
+As for our dataset, it is challenging to see what data is accurate and correct given the information that is hidden. At first glance, it may seem like an error with the dataset with plenty of cells containing an \N, but that is done on purpose. For the columns containing the address, latitude and longitude, according to the City of Ottawa page, the field is only displayed for public service requests, since private service requests can display personal information (insert cites). Given that our dataset is limited, the VIMO analysis will consequently be limited to the information available. 
+
+The first step in the VIMO analysis is to assess the validity. Valid values are variables that are correct and accurate within the dataset. The service requests ID’s, status, type, description, opened dates and channel columns seem to contain correct data within a range. When the latitude, longitude and address are available, they are valid as well and point to the Ontario and Quebec region (insert cite). 
+
+
+Invalid values are values that are impossible, meaning they cannot register as valid in that context (insert cites maybe?). In this case, we cannot determine whether the hidden data represented by \N is invalid since we do not know its content. While the closed date and ward columns do contain hidden data and were not specified to in the dataset’s background, they could be deemed as non-applicable even. Rather than assessing that these values are invalid, it is better to assess them as missing.
+
+
+Missing values is when the variable is left blank (insert cites) and we must evaluate what is left. Any \N in the data set is considered to be missing values since it is hidden and we do not know its content.
+
 ### 3.2. Cleaning Data
 
 Insert text here.
