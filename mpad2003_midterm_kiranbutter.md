@@ -35,6 +35,22 @@ To include a screen capture, use the sample code below. Your images should be sa
 ![](import-screen-capture.png)<br>
 *Figure 1: The "Import file" prompt on Google Sheets.*
 
+To import the data into google sheets, I clicked save link as and saved the CSV file on my computer; it will save as a text file.
+I then went to Google Sheets, clicked the File option in the top menu, clicked on import, then uploaded the data set text file. 
+Then, I selected the comma option for the separator type, and clicked the import data. Once that has been clicked, the message ‘Success! File imported. Open now >>” will appear, and then click the Open now blue hyperlink and it will bring you to the imported dataset. 
+
+
+This is the dataset right after it has been imported. 
+
+
+Since it is a dataset from the City of Ottawa, for any description, it is written in both English and French, making the cell's length dragged out when clicked on. Looking at the dataset, there are 11 columns, letters A to K, and 28539 rows of data. In terms of how the data is structured, every data is within their respective cells–there is no overlapping into other cells. The majority of the address, latitude, longitude and ward columns will have \N in their cells, leaving gaps in the dataset. 
+
+
+Columns A to D, G and K contain nominal variables since they consist of categories and differ from one another in names with no natural order (such as the status, type, description, etc.) (insert cites), whereas, columns E, F, H, I and J consist of numeric variables since they are numbers, and are either continuous within a given interval (such as the longitude or latitude) or discrete by only being specific values (like the wards) (insert cites).  
+
+One question that comes to mind when I examine the raw data is “What is the most common type of request that gets asked?” since there are a handful of types listed in the column which determine the specific action for the city to partake. 
+
+
 **Here are examples of functions and lines of code put in grey boxes:**
 
 1. If you name a function, put it between "angled" quotation marks like this: `IMPORTHTML`.
