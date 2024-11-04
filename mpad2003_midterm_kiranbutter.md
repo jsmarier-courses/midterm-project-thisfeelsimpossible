@@ -24,7 +24,10 @@ And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Introduction
 
-Insert text here.
+This assignment’s objective is to extract data from the provided data, to then clean and analyze to create a graph and find a potential story from the findings. The dataset is a subset of a City of Ottawa larger dataset, called ‘2024 Service Requests”, found on the City of Ottawa’s open data portal, last updated on October 3rd, 2024 and then featured 251,714 entries of service requests from contact or client service centres, along with Email and web-based service portals.. 
+According to the City of Ottawa, “the data provides a summary of requests for service that require action by City staff. Data is presented by ward and shows the responsible City department and service description.”
+The service requests data details are noted in the request type, description, status, address, longitude, latitude and ward. This analysis will be conducted in 4 sections: getting data, understanding data (VIMO analysis, cleaning data, exploratory data analysis (EDA)), potential story and conclusion. 
+
 
 ## 2. Getting Data
 
@@ -212,7 +215,12 @@ Furthermore, digging deeper into Ottawa’s funds can determine why some request
 
 ## 5. Conclusion
 
-Insert text here.
+My thought process throughout this assignment was to clean the data in a way to easily create a graph. The most challenging part would be cleaning the data. It was difficult to find what can be edited considering that I found all the data too important, hence why I only ended up removing the ‘\N’ since it served no purpose– I felt everything else served some importance though. I identified a gap in my knowledge when it came to applying the cleaning techniques, since the majority of time was spent searching for cleaning techniques online and figuring out how to remove, edit, etc. on the Google sheet. 
+
+The rewarding part would be creating the graph based on my cleaned dataset. Knowing that I had made a graph out of an idea in mind from the data that I had cleaned and making connections was rewarding since I felt I was presenting my own vision of a portion of the data. It made me feel like I was cut out for this type of work involving graphs, data, etc. 
+
+What I could have done differently is implemented more cleaning methods. I felt that I did not really explore what other data I could edit–I played it safe by keeping the majority of the data. I could have removed data that did not serve my vision, or use other functions like =CONCATENATE to merge it with other data. That way, it would have been an honest and experimental attempt of cleaning data. 
+
 
 ## 6. References
 
