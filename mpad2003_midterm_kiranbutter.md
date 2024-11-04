@@ -87,11 +87,87 @@ The first step in the VIMO analysis is to assess the validity. Valid values are 
 Invalid values are values that are impossible, meaning they cannot register as valid in that context (insert cites maybe?). In this case, we cannot determine whether the hidden data represented by \N is invalid since we do not know its content. While the closed date and ward columns do contain hidden data and were not specified to in the dataset’s background, they could be deemed as non-applicable even. Rather than assessing that these values are invalid, it is better to assess them as missing.
 
 
-Missing values is when the variable is left blank (insert cites) and we must evaluate what is left. Any \N in the data set is considered to be missing values since it is hidden and we do not know its content.
+Missing values is when the variable is left blank (insert cites) and we must evaluate what is left. Any \N in the data set is considered to be missing values since it is hidden and we do not know its content. Meaning that the unknown ward values are considered to be missing, along with any \N placed in the dataset in general (the closed dates, address, longitude and latitude). 
+
+
+Outlier values are values that are extremely small or large to relative expectations (insert cites). I would argue that there are no outlier values seen in the dataset. While the service request ID’s are lengthy, it is typical for ID’s to be lengthy. Column B has values that are either resolved, cancelled or active, and no other value that is out of the range, and for Column J, the wards (besides the ones that contain \N) are all within 1 - 24, which is the number of wards in the Ottawa region (insert cites). 
 
 ### 3.2. Cleaning Data
 
-Insert text here.
+FREEZING ROWS - INSERT LECTURE VIDEO AS A CITE
+
+Freezing columns and rows are useful to scroll through the dataset, and still keep track of the column or row you are in. 
+
+To do this, click on the number of where the labels for the columns are.
+
+This will usually be row 1.
+
+After clicking the row number, click View > Freeze > Up to 1 row.
+
+What this does is it freezes that specific row.
+Now we can scroll through the dataset, and the labels will follow and indicate what columns are which.
+
+
+
+
+
+
+
+SPLIT METHOD FOR DESCRIPTION - INSERT VIDEO AS A CITE
+
+Since this is a dataset from the city of Ottawa, it included both English and French, but considering that English is more widely known, we will remove the French in the dataset to be more clear. 
+
+The french is seen at the label/heading of each column, and in the description column. 
+So to remove the french, we will use the SPLIT function.
+
+The SPLIT function is a function used to split text based on a separator into its own parts. Say you have text that reads: “watermelon,apple,cherry” and you want to split it based on the commas. The SPLIT function can divide the text, making it: “watermelon apple cherry”.
+
+Before we initialize the split function, add two columns to the right, by right clicking Column D. This is where the two parts will be placed once we initialize the split function. 
+
+Next, in the empty column to the right, on the cell after the heading, Initialize the split function by typing =ARRAYFORMULA
+What this does is make it so that it will fill up the entire column instead of us having to use the fill handle. 
+
+
+
+
+Then, in brackets, type in the SPLIT(D2:D28935, “|”)
+
+THe D2:D28935 is the range of data we will split (the entire description column) and the “|” is the delimiter (separator) used to indicate where the text will be separated.
+
+Once completed, hit enter and it will divide the french and english by the “|” into the two columns.
+
+Then, write Description at the top of the English description column.
+
+After, copy and paste the entire English column. Then right click, and go to Paste Special > Values only. This will allow us to remove the French description (column F) and mixed English and French description columns (column D). 
+
+
+
+
+ADDING FILTERS - REFERENCE THE VIDEO MAYBE
+
+Since there are a lot of cases of non-applicable/hidden information, to clear our dataset, we will only focus on requests that have public information easily available for us. 
+
+We will clear out every instance of \N seen in the address column (and thus, the longitude, latitude and ward column) using the “Create a filter” option in Google Sheets. Creating a filter helps us sort for data we want to include or not.
+
+To start off, click on the data tool at the top, then click on ‘Create a filter’. (insert cites?)
+
+Then click on the filter button (represented by three horizontal lines) next to the column.
+
+Click on Filter by condition, and select ‘Text does not contain’, and input the ‘\N’. Once typed in, hit OK at the bottom in green. 
+
+It will then filter out every instance of \N in the Address, Latitude, Longitude and Ward column, only showing the public requests. 
+
+This makes it easier to create charts of public requests since we do not have to incorporate 28935 rows of data. Instead, we can focus on the public requests only or data that is available to us to chart/graph. 
+
+
+
+Last touches:
+
+As for the column labels, I simply removed the French part, since using a function or another method would take up time for something so simple. 
+
+
+This is the dataset after cleanup.
+
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
