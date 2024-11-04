@@ -171,7 +171,26 @@ This is the dataset after cleanup.
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
-Insert text here.
+My thought process in creating the chart was to originally show how many requests wards receive per type of request, but since the dataset has been cleaned and modified, that question has now changed. I limited the data to only focus on public requests, or rows that display information instead of all 28935 rows since I did not want to overload the data onto the chart.
+Limiting to public requests has left four types from the original 11: roads and transportation, city facilities, recreation and culture and social community service. The modification of only displaying public requests now allows for a significantly smaller portion of the data to be graphed, making it easier for the viewer to grasp. Instead of how many requests wards receive per type, my thought process was now how many public requests wards receive per the four types (assuming they are public) to highlight what issues they can solve from the requests.
+
+As for creating the graph, I chose a stacked column chart since it is best to show what requests per type contribute to the overall total of ward’s requests. 
+
+To create the pivot table:
+Insert > Pivot Table
+Then, add Ward under Rows
+Type under Columns 
+And
+Service request ID under values. Ensure that the summarize by is set to COUNTA.
+
+To create the graph
+Insert > Chart, then select stacked column chart, and it should autmoatcailly create the graph
+
+
+Furthermore, according to Statistics Canada, “stacked bar charts can be very difficult to analyze if too many items are in each stack” (insert cite), but since I limited the chart to four types, there would be less difficulty in analyzing the number of requests. Additionally, since all the information is in one graph, rather than four graphs to depict the requests per type, according to Cleveland and Mcgill’s hierarchy of elementary perceptual tasks, it allows for the viewer to digest the information easily and compare the values (insert cite) 
+
+These variables can tell a story of the areas that are well, and the areas that need work in the four types of the wards. Immediately, the amount of requests for roads and transportation is noticeable. It seems that all wards one to 24 receive a lot of issues when it comes to road or transportation. Another noticeable variable is the lack of city facilities requests. Only wards 18 and 23 have received requests on city facilities, which can potentially indicate that wards 18 and 23 have work to do revolving around their city facilities, while every other ward is performing well. As for social community service, some wards have a lot of requests and others have little to none at all; this highlights the type of work that needs to be done in those wards. As for recreation and culture, every ward seems to receive a handful of requests.
+
 
 **This section should include a screen capture of your pivot table, like so:**
 
@@ -185,7 +204,11 @@ Insert text here.
 
 ## 4. Potential Story
 
-Insert text here.
+To tell the story of which wards need improvements and where they perform well, gathering more data or variables, such as how much were resolved, cancelled or are currently active reflected in the original dataset can be useful. 
+While we do see how many requests are made, we cannot see if the request was resolved, cancelled or is active, so we cannot know if areas are being improved if requests were cancelled or are currently worked on. 
+To gather insight, we could interview the councilors respective to their ward to see how requests get handled accordingly. For example, we saw that only wards 18 and 23 have city facilities requests from our graph, so we can interview councilor’s Marty Carr and Allan Hubley to see why there are instances of such (insert cite).
+Furthermore, digging deeper into Ottawa’s funds can determine why some requests are not fulfilled. On August 8th 2024, which is recent to the date of service requests in the dataset (August 1st), there was a statement from mayor Mark Sutcliffe issuing that Ottawa is facing a financial crisis. Sutcliffe (insert cite) claims “Our city is facing unprecedented financial challenges that are not of our making” and that “this can’t continue or we will face historic challenges in our next budget.” This statement highlights that there’s a possibility that some areas cannot be improved at the moment since there is a lack of budget or income, which will add to the story. 
+
 
 ## 5. Conclusion
 
