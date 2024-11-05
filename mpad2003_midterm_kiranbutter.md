@@ -44,7 +44,7 @@ Once imported, the message, ‘Success! File imported. Open now >>” will appea
 
 This is the dataset right after it has been imported. 
 
-![!\[\](/datasetwhenfirstimportedUSETHISONE (1).png)](<datasetwhenfirstimportedUSETHISONE (1).png>)<br>
+![](datasetwhenfirstimportedUSETHISONE (1).png)<br>
 *Figure 1: This screenshot shows the dataset after it has been imported*.
 
 
