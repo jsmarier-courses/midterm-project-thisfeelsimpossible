@@ -35,27 +35,27 @@ This assignment aims to extract, clean and analyze a provided dataset, create a 
 
 ## 2. Getting Data
 
-Use two hashtag symbols (`##`) to create a level 2 heading like this one.
+Instructions to import the data into Google Sheets: 
 
-To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
-
-![](import-screen-capture.png)<br>
-*Figure 1: The "Import file" prompt on Google Sheets.*
-
-To import the data into google sheets, I clicked save link as and saved the CSV file on my computer; it will save as a text file.
-I then went to Google Sheets, clicked the File option in the top menu, clicked on import, then uploaded the data set text file. 
-Then, I selected the comma option for the separator type, and clicked the import data. Once that has been clicked, the message ‘Success! File imported. Open now >>” will appear, and then click the Open now blue hyperlink and it will bring you to the imported dataset. 
-
+Right-click the link, click “Save link as…” and save the CSV file to your computer. It will save as a text file. 
+Go to Google Sheets, File > Import, then upload the dataset text file. 
+Once uploaded, select the comma for the separator type, and click import data. 
+Once imported, the message, ‘Success! File imported. Open now >>” will appear. Click on the “Open now >>” blue hyperlink, and it will take you to the imported dataset. 
 
 This is the dataset right after it has been imported. 
 
+![](/datasetwhenfirstimportedUSETHISONE (1).png)<br>
+*Figure 1: This screenshot shows the dataset after it has been imported*.
 
-Since it is a dataset from the City of Ottawa, for any description, it is written in both English and French, making the cell's length dragged out when clicked on. Looking at the dataset, there are 11 columns, letters A to K, and 28539 rows of data. In terms of how the data is structured, every data is within their respective cells–there is no overlapping into other cells. The majority of the address, latitude, longitude and ward columns will have \N in their cells, leaving gaps in the dataset. 
+
+[Link to the Google Sheet data spreadsheet](https://docs.google.com/spreadsheets/d/1eOZ1uVapeKvocDCgMW5fZFrOu2O9v17iskftLEeP6RE/edit?usp=sharing).
 
 
-Columns A to D, G and K contain nominal variables since they consist of categories and differ from one another in names with no natural order (such as the status, type, description, etc.) (insert cites), whereas, columns E, F, H, I and J consist of numeric variables since they are numbers, and are either continuous within a given interval (such as the longitude or latitude) or discrete by only being specific values (like the wards) (insert cites).  
+There are 11 columns, letters A to K, and 28539 rows of data. In terms of how the data is structured, every data is within their respective cells– but some data is hidden at first glance. It is revealed upon clicking on it by expanding it. Since it is a dataset from the City of Ottawa, the description is written in English and French, dragging the cell's length–impacting readability. What also impacts readability is the value of ‘\N’ in the cells of the address, latitude, longitude and sometimes ward columns, indicating restricted, hidden or missing data. We cannot fully assess the data given if values are unavailable, so we are limited to what we can read and take away. 
 
-One question that comes to mind when I examine the raw data is “What is the most common type of request that gets asked?” since there are a handful of types listed in the column which determine the specific action for the city to partake. 
+One question that arises when examining the raw data is **“Which ward has the most requests per type?”** since it is important to see what wards need service done to improve. Thus, columns A, C and J (the service request IDs, the type and ward number) are especially relevant in this analysis. Columns A and C contain nominal variables since they consist of categories and differ in names with no natural order (Touhidul Islam, 2024); the type and service request IDs are distinguished. As for column J, it consists of numeric variables since they are numbers and are discrete by being a specific value (ward number) (Islam, 2024).
+These three columns are analyzed further, along with the rest of the dataset. 
+
 
 
 **Here are examples of functions and lines of code put in grey boxes:**
