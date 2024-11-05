@@ -24,9 +24,13 @@ And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Introduction
 
-This assignment’s objective is to extract data from the provided data, to then clean and analyze to create a graph and find a potential story from the findings. The dataset is a subset of a City of Ottawa larger dataset, called ‘2024 Service Requests”, found on the City of Ottawa’s open data portal, last updated on October 3rd, 2024 and then featured 251,714 entries of service requests from contact or client service centres, along with Email and web-based service portals.. 
-According to the City of Ottawa, “the data provides a summary of requests for service that require action by City staff. Data is presented by ward and shows the responsible City department and service description.”
-The service requests data details are noted in the request type, description, status, address, longitude, latitude and ward. This analysis will be conducted in 4 sections: getting data, understanding data (VIMO analysis, cleaning data, exploratory data analysis (EDA)), potential story and conclusion. 
+This assignment aims to extract, clean and analyze a provided dataset, create a graph and find a potential story from the findings. The dataset is a subset of a City of Ottawa larger dataset, called ‘2024 Service Requests”, found on the City of Ottawa’s open data portal, last updated on October 3rd, 2024 and then featured 251,714 entries of service requests from various means: contact or client service centres, email and web-based service portals. According to the City of Ottawa (2024b), “the data provides a summary of requests for service that require action by City staff. Data is presented by the ward and shows the responsible City department and service description.” The service requests data containing the request type, description, status, address, longitude, latitude and ward. This analysis is conducted in 4 sections: getting data, understanding data (VIMO analysis, cleaning data, exploratory data analysis), potential story and conclusion.
+
+
+[Link to the original dataset on Open Ottawa](https://open.ottawa.ca/documents/65fe42e2502d442b8a774fd3d954cac5/about).
+
+[Link to the CSV version](https://raw.githubusercontent.com/jsmarier/course-datasets/refs/heads/main/ottawa-311-service-requests-august-2024.csv).
+
 
 
 ## 2. Getting Data
