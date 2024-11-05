@@ -1,4 +1,4 @@
-**November 4th, 2024**<br>
+**November 5th, 2024**<br>
 **MPAD2003 Introductory Data Storytelling**<br>
 **Kiran Butter**<br>
 **Presented to Jean-Sébastien Marier**<br>
@@ -26,7 +26,7 @@ Instructions to import the data into Google Sheets:
 3. Once uploaded, select the comma for the separator type, and click import data. 
 4. Once imported, the message, ‘Success! File imported. Open now >>” will appear. Click on the “Open now >>” blue hyperlink, and it will take you to the imported dataset. 
 
-**This is a screenshot of the dataset right after it has been imported.** 
+**Screen capture of the dataset right after it has been imported:** 
 
 ![Service request dataset after it has been imported](<datasetwhenfirstimportedUSETHISONE (1).png>)<br>
 *Figure 1: This screenshot shows the dataset after it has been imported*.
@@ -115,7 +115,7 @@ Instructions (Marier, 2021, 5:42):
 What this did was freeze that specific row, so while we scroll, the column label will follow along.
 
 
-**Below is a screenshot of the dataset after cleanup.**
+**Screen capture of the dataset after cleanup:**
 
 ![Service request dataset after cleanup](<datasetaftercleaningTHISONE.png>)<br>
 *Figure 2: This screenshot shows the dataset after it has been cleaned.*
@@ -144,19 +144,18 @@ The potential story is that some wards are well, while others need improvement i
 
 ## 4. Potential Story
 
-To tell the story of which wards need improvements and where they perform well, gathering more data or variables, such as how much were resolved, cancelled or are currently active reflected in the original dataset can be useful. 
-While we do see how many requests are made, we cannot see if the request was resolved, cancelled or is active, so we cannot know if areas are being improved if requests were cancelled or are currently worked on. 
-To gather insight, we could interview the councilors respective to their ward to see how requests get handled accordingly. For example, we saw that only wards 18 and 23 have city facilities requests from our graph, so we can interview councilor’s Marty Carr and Allan Hubley to see why there are instances of such (insert cite).
-Furthermore, digging deeper into Ottawa’s funds can determine why some requests are not fulfilled. On August 8th 2024, which is recent to the date of service requests in the dataset (August 1st), there was a statement from mayor Mark Sutcliffe issuing that Ottawa is facing a financial crisis. Sutcliffe (insert cite) claims “Our city is facing unprecedented financial challenges that are not of our making” and that “this can’t continue or we will face historic challenges in our next budget.” This statement highlights that there’s a possibility that some areas cannot be improved at the moment since there is a lack of budget or income, which will add to the story. 
+Gathering more data or variables, such as the status (resolved, cancelled, active) reflected in the original dataset can be useful for telling the story of which wards need improvements and where they perform well.
+While we do see how many requests are made, we cannot see if the request was resolved, cancelled or is active, so we cannot know if areas are being improved if requests were cancelled or if they are currently being worked on. 
+To gather insight, we could interview the councillors respective to their ward to see how requests get handled accordingly. For example, we saw that only wards 18 and 23 have city facilities requests from our graph, so we can interview councillors Marty Carr and Allan Hubley to see why there are instances of such (City of Ottawa, n.d.-a).
+Furthermore, digging deeper into Ottawa’s funds can determine why some requests are not fulfilled. On August 8th, 2024, which is recent to the date of service requests in the dataset (August 1st), there was a statement from Mayor Mark Sutcliffe that Ottawa is facing a financial crisis. Sutcliffe claims “Our city is facing unprecedented financial challenges that are not of our making” and that “this can’t continue or we will face historic challenges in our next budget” (City of Ottawa, 2024a). This statement highlights that there’s a possibility that some areas cannot be improved at the moment since there is a lack of budget or income, which will add to the story.
 
 
 ## 5. Conclusion
 
-My thought process throughout this assignment was to clean the data in a way to easily create a graph. The most challenging part would be cleaning the data. It was difficult to find what can be edited considering that I found all the data too important, hence why I only ended up removing the ‘\N’ since it served no purpose– I felt everything else served some importance though. I identified a gap in my knowledge when it came to applying the cleaning techniques, since the majority of time was spent searching for cleaning techniques online and figuring out how to remove, edit, etc. on the Google sheet. 
+My thought process throughout this assignment was to clean the data to create a graph easily. The most challenging part would be cleaning the data. It was difficult to find what could be edited considering that I found all the data too important, hence why I only removed the ‘\N’ since it served no purpose– I felt everything else served some importance though. I identified a gap in my knowledge when it came to applying the cleaning techniques since the majority of time was spent searching for cleaning techniques online and figuring out how to remove, edit, etc. on Google Sheets. 
+The rewarding part was creating the graph based on my cleaned dataset. Knowing that I had made a graph out of an idea in mind from the data that I had cleaned and making connections was rewarding since I felt I was presenting my own vision of a portion of the data. It made me feel like I was cut out for this work involving graphs, data, etc. 
+What I could have done differently is implement more cleaning methods. I felt that I did not totally explore what other data I could edit–I played it safe by keeping the majority of the data. I could have removed data that did not serve my vision or used other functions like =CONCATENATE to merge it with other data. That way, it would have been a more honest and experimental attempt to clean data.
 
-The rewarding part would be creating the graph based on my cleaned dataset. Knowing that I had made a graph out of an idea in mind from the data that I had cleaned and making connections was rewarding since I felt I was presenting my own vision of a portion of the data. It made me feel like I was cut out for this type of work involving graphs, data, etc. 
-
-What I could have done differently is implemented more cleaning methods. I felt that I did not really explore what other data I could edit–I played it safe by keeping the majority of the data. I could have removed data that did not serve my vision, or use other functions like =CONCATENATE to merge it with other data. That way, it would have been an honest and experimental attempt of cleaning data. 
 
 
 ## 6. References
