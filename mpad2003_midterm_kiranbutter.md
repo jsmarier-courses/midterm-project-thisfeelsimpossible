@@ -224,8 +224,10 @@ What I could have done differently is implemented more cleaning methods. I felt 
 
 ## 6. References
 
-Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
+Cairo, A. (2016). *The Truthful Art: Data, Charts, and Maps for Communication*. New Riders. [https://learning.oreilly.com/library/view/the-truthful-art/9780133440492/ch05.html#ch05](https://learning.oreilly.com/library/view/the-truthful-art/9780133440492/ch05.html#ch05)
 
 **Here's an example:**
 
 Bounegru, L., & Gray, J. (Eds.). (2021). *The Data Journalism Handbook 2: Towards A Critical Data Practice*. Amsterdam University Press. [https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153)
+
+Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
