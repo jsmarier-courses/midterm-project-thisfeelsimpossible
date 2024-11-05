@@ -226,8 +226,22 @@ What I could have done differently is implemented more cleaning methods. I felt 
 
 Cairo, A. (2016). *The Truthful Art: Data, Charts, and Maps for Communication*. New Riders. [https://learning.oreilly.com/library/view/the-truthful-art/9780133440492/ch05.html#ch05](https://learning.oreilly.com/library/view/the-truthful-art/9780133440492/ch05.html#ch05)
 
-**Here's an example:**
+City of Ottawa. (n.d.-a). *Mayor and City Councillors*. City of Ottawa. [https://ottawa.ca/en/city-hall/mayor-and-city-councillors](https://ottawa.ca/en/city-hall/mayor-and-city-councillors)
 
-Bounegru, L., & Gray, J. (Eds.). (2021). *The Data Journalism Handbook 2: Towards A Critical Data Practice*. Amsterdam University Press. [https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153)
+City of Ottawa. (n.d.-b). *Ward maps and school board zones*. City of Ottawa. [https://ottawa.ca/en/city-hall/elections/ward-maps-and-school-board-zones#section-c7309d83-a827-4604-a3f6-7f29f875ad7a](https://ottawa.ca/en/city-hall/elections/ward-maps-and-school-board-zones#section-c7309d83-a827-4604-a3f6-7f29f875ad7a)
 
-Include a list of your references here. Please follow [APA guidelines for references](https://apastyle.apa.org/style-grammar-guidelines/references). Hanging paragraphs aren't required though.
+City of Ottawa. (2024a, August 8). *Mayor says Ottawa is facing financial crisis based on shortfall in federal and provincial funding*. City of Ottawa. [https://ottawa.ca/en/city-hall/city-news/newsroom/mayor-says-ottawa-facing-financial-crisis-based-shortfall-federal-and-provincial-funding](https://ottawa.ca/en/city-hall/city-news/newsroom/mayor-says-ottawa-facing-financial-crisis-based-shortfall-federal-and-provincial-funding)
+
+City of Ottawa. (2024b, September 4). *2024 Service Requests*. Open Ottawa. [https://open.ottawa.ca/documents/65fe42e2502d442b8a774fd3d954cac5/about](https://open.ottawa.ca/documents/65fe42e2502d442b8a774fd3d954cac5/about)
+
+Google. (n.d.). *ARRAYFORMULA*. Google Help. [https://support.google.com/docs/answer/3093275?hl=en](https://support.google.com/docs/answer/3093275?hl=en)
+
+Marier, J.-S. (2021). *Cleaning Data in Google Sheets* [Video]. YouTube. [https://www.youtube.com/watch?v=U4yigiawIEU](https://www.youtube.com/watch?v=U4yigiawIEU)
+
+Statistics Canada. (2010, September 2). *5.2 Bar Chart*. Statistics Canada. [https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch9/bargraph-diagrammeabarres/5214818-eng.htm](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch9/bargraph-diagrammeabarres/5214818-eng.htm)
+
+Statistics Canada. (2020, September 23). *Data Accuracy and Validation: Methods to ensure the quality of data*. Statistics Canada. [https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062020008](https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062020008)
+
+Touhidul Islam, M. (2021, February 25). *Levels of Measurement (Nominal, Ordinal, Interval, Ratio) in Statistics*. Data Science Central. [https://www.datasciencecentral.com/levels-of-measurement-nominal-ordinal-interval-ratio-in/](https://www.datasciencecentral.com/levels-of-measurement-nominal-ordinal-interval-ratio-in/)
+
+
