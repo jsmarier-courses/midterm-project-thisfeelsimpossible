@@ -139,10 +139,8 @@ The potential story is that some wards are well, while others need improvement i
 
 **Screen capture of the exploratory chart:**
 
-![Stacked bar chart of the number of requests per four types.](Number of Service Requests per Four Public Request Types.png)<br>
+![Stacked bar chart of the number of requests per four types.](<Number of Service Requests per Four Public Request Types.png>)
 *Figure 4: This screenshot shows the graph made from the pivot table. It shows the number of requests per four public request types*.
-
-
 
 ## 4. Potential Story
 
