@@ -37,14 +37,14 @@ This assignment aims to extract, clean and analyze a provided dataset, create a 
 
 Instructions to import the data into Google Sheets: 
 
-Right-click the link, click “Save link as…” and save the CSV file to your computer. It will save as a text file. 
-Go to Google Sheets, File > Import, then upload the dataset text file. 
-Once uploaded, select the comma for the separator type, and click import data. 
-Once imported, the message, ‘Success! File imported. Open now >>” will appear. Click on the “Open now >>” blue hyperlink, and it will take you to the imported dataset. 
+1. Right-click the link, click “Save link as…” and save the CSV file to your computer. It will save as a text file. 
+2. Go to Google Sheets, File > Import, then upload the dataset text file. 
+3. Once uploaded, select the comma for the separator type, and click import data. 
+4. Once imported, the message, ‘Success! File imported. Open now >>” will appear. Click on the “Open now >>” blue hyperlink, and it will take you to the imported dataset. 
 
 This is the dataset right after it has been imported. 
 
-![](datasetwhenfirstimportedUSETHISONE (1).png)<br>
+![Service request dataset after it has been imported](<datasetwhenfirstimportedUSETHISONE (1).png>)
 *Figure 1: This screenshot shows the dataset after it has been imported*.
 
 
