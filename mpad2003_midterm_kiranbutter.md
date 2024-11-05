@@ -44,7 +44,7 @@ Instructions to import the data into Google Sheets:
 
 This is the dataset right after it has been imported. 
 
-![Service request dataset after it has been imported](<datasetwhenfirstimportedUSETHISONE (1).png>)
+![Service request dataset after it has been imported](<datasetwhenfirstimportedUSETHISONE (1).png>)</br>
 *Figure 1: This screenshot shows the dataset after it has been imported*.
 
 
@@ -65,16 +65,16 @@ The **VIMO** analysis is a method used to ensure the quality, accuracy and corre
 
 For this analysis, columns A, C and J will be assessed since they are key to ‘’answer‘’ to our question. 
 
-**Valid Values**
+**VALID VALUES**
 
 The first step in the **VIMO** analysis is to assess the **validity**, ensuring values are correct and accurate. 
 Columns A and C contain valid values since there are no duplicate service request IDs, and the types are within the scope of options. As for column J, it is challenging to see what data is accurate and correct given some cell information is hidden by the value ‘\N’. It may appear like an error, but I assume it was intentional. According to the City of Ottawa (2024b), the address, latitude and longitude columns only display information for public service requests to avoid publishing personal information. However, it does not mention so for the ward column; therefore, we will assume that ‘\N’ means non-applicable instead of private information. 
 
-**Invalid** and **Missing Values**
+**INVALID** and **MISSING VALUES**
 
 **Invalid** values are impossible and cannot register as valid in the given context (Statistics Canada, 2020, 1:52). We already determined that columns A and C are valid– but column J’s non-applicable problem still stands. Since we cannot render these ‘\N’ values invalid because of their unknown content, it is better to assess them as **missing**, where a variable is left blank, and we must evaluate the remaining data (Statistics Canada, 2020, 2:06). 
 
-**Outlier Values**
+**OUTLIER VALUES**
 
 **Outlier** values are extremely small or large to relative expectations (Statistics Canada, 2020, 2:17). I would argue there are no outlier values. While the service request IDs are lengthy, it is a typical size for IDs. Column C has values that reflect the same types and no other value outside the assigned options. Column J (besides the ones that contain ‘\N’) are all within 1 - 24, the number of wards in the Ottawa region (City of Ottawa, n.d.-b).
 
@@ -82,79 +82,60 @@ Columns A and C contain valid values since there are no duplicate service reques
 
 ### 3.2. Cleaning Data
 
-FREEZING ROWS - INSERT LECTURE VIDEO AS A CITE
+**ADDING FILTERS** 
 
-Freezing columns and rows are useful to scroll through the dataset, and still keep track of the column or row you are in. 
+Since there are a lot of cases of non-applicable/hidden information, to clear the dataset, I only focused on requests that have public information easily available to us. 
+I cleared every instance of \N in the address column (and thus, the longitude, latitude and ward column) using the “Create a filter” option in Google Sheets. 
 
-To do this, click on the number of where the labels for the columns are.
+Instructions (Marier, 2021, 6:03): 
 
-This will usually be row 1.
+1. Click Data >  Create a filter. 
+2. Click the filter button (represented by three horizontal lines) next to the address column.
+3. Click on Filter by condition, select ‘Text does not contain’, and input ‘\N’ 
+4. Click  OK at the bottom in green. 
+5. Copy and paste the entire dataset by clicking the gray box in the far left corner to apply the changes.
 
-After clicking the row number, click View > Freeze > Up to 1 row.
-
-What this does is it freezes that specific row.
-Now we can scroll through the dataset, and the labels will follow and indicate what columns are which.
-
-
-
-
+This makes it easier to create charts of public requests since we do not have to incorporate 28935 rows of data. Instead, we can focus on data that is available to us (the public requests).
 
 
+**`SPLIT` FUNCTION**
 
-SPLIT METHOD FOR DESCRIPTION - INSERT VIDEO AS A CITE
-
-Since this is a dataset from the city of Ottawa, it included both English and French, but considering that English is more widely known, we will remove the French in the dataset to be more clear. 
-
-The french is seen at the label/heading of each column, and in the description column. 
-So to remove the french, we will use the SPLIT function.
-
-The SPLIT function is a function used to split text based on a separator into its own parts. Say you have text that reads: “watermelon,apple,cherry” and you want to split it based on the commas. The SPLIT function can divide the text, making it: “watermelon apple cherry”.
-
-Before we initialize the split function, add two columns to the right, by right clicking Column D. This is where the two parts will be placed once we initialize the split function. 
-
-Next, in the empty column to the right, on the cell after the heading, Initialize the split function by typing =ARRAYFORMULA
-What this does is make it so that it will fill up the entire column instead of us having to use the fill handle. 
+Since the dataset is from the City of Ottawa, it included both English and French, but considering that English is more widely known, I removed the French in the dataset to be more clear. 
+The French is in the description column. To remove the French, I used the `SPLIT` function; a function used to split text based on a separator into its own parts.
 
 
+Instructions (Marier, 2021, 13:00;  Google, n.d.):
+
+1. Add two columns to the right by right-clicking Column D. 
+2. In E2, initialize the `ARRAYFORMULA` function by typing `=ARRAYFORMULA` (we will use `ARRAYFORMULA` to fill up the entire column, instead of using the fill handle).
+3. Type in the brackets: 
+```r
+SPLIT(D2:D4393, “|”)
+``` 
+where the range is D2:D4393 and delimiter is “|”
+4. Hit Enter.
+5. Copy and Paste the entire English column (column E)
+6. Right-click and go to Paste Special > Values only (allows us to remove the French description (column F) and mixed English and French description columns (column D)). 
 
 
-Then, in brackets, type in the SPLIT(D2:D28935, “|”)
+**FREEZING COLUMNS**
 
-THe D2:D28935 is the range of data we will split (the entire description column) and the “|” is the delimiter (separator) used to indicate where the text will be separated.
+Freezing columns and rows is useful for scrolling through the dataset and keeping track of the column or row you are in. This is useful, considering the dataset is large. 
 
-Once completed, hit enter and it will divide the french and english by the “|” into the two columns.
+Instructions (Marier, 2021, 5:42):
 
-Then, write Description at the top of the English description column.
+1. Click the number of where the column labels are (usually row one, thus the number one on the far right)
+2. Click View > Freeze > Up to 1 row.
 
-After, copy and paste the entire English column. Then right click, and go to Paste Special > Values only. This will allow us to remove the French description (column F) and mixed English and French description columns (column D). 
-
-
-
-
-ADDING FILTERS - REFERENCE THE VIDEO MAYBE
-
-Since there are a lot of cases of non-applicable/hidden information, to clear our dataset, we will only focus on requests that have public information easily available for us. 
-
-We will clear out every instance of \N seen in the address column (and thus, the longitude, latitude and ward column) using the “Create a filter” option in Google Sheets. Creating a filter helps us sort for data we want to include or not.
-
-To start off, click on the data tool at the top, then click on ‘Create a filter’. (insert cites?)
-
-Then click on the filter button (represented by three horizontal lines) next to the column.
-
-Click on Filter by condition, and select ‘Text does not contain’, and input the ‘\N’. Once typed in, hit OK at the bottom in green. 
-
-It will then filter out every instance of \N in the Address, Latitude, Longitude and Ward column, only showing the public requests. 
-
-This makes it easier to create charts of public requests since we do not have to incorporate 28935 rows of data. Instead, we can focus on the public requests only or data that is available to us to chart/graph. 
+What this did was freeze that specific row, so while we scroll, the column label will follow along.
 
 
+Below is a screenshot of the dataset after cleanup.
 
-Last touches:
+![Service request dataset after cleanup](<datasetaftercleaningTHISONE.png>)<br>
+*Figure 2: This screenshot shows the dataset after it has been cleaned.*
 
-As for the column labels, I simply removed the French part, since using a function or another method would take up time for something so simple. 
 
-
-This is the dataset after cleanup.
 
 
 ### 3.3. Exploratory Data Analysis (EDA)
