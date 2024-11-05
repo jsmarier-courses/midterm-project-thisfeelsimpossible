@@ -42,7 +42,7 @@ Instructions to import the data into Google Sheets:
 3. Once uploaded, select the comma for the separator type, and click import data. 
 4. Once imported, the message, ‘Success! File imported. Open now >>” will appear. Click on the “Open now >>” blue hyperlink, and it will take you to the imported dataset. 
 
-This is the dataset right after it has been imported. 
+**This is a screenshot of the dataset right after it has been imported.** 
 
 ![Service request dataset after it has been imported](<datasetwhenfirstimportedUSETHISONE (1).png>)</br>
 *Figure 1: This screenshot shows the dataset after it has been imported*.
@@ -113,6 +113,7 @@ Instructions (Marier, 2021, 13:00;  Google, n.d.):
 SPLIT(D2:D4393, “|”)
 ``` 
 where the range is D2:D4393 and delimiter is “|”
+
 4. Hit Enter.
 5. Copy and Paste the entire English column (column E)
 6. Right-click and go to Paste Special > Values only (allows us to remove the French description (column F) and mixed English and French description columns (column D)). 
@@ -130,7 +131,7 @@ Instructions (Marier, 2021, 5:42):
 What this did was freeze that specific row, so while we scroll, the column label will follow along.
 
 
-Below is a screenshot of the dataset after cleanup.
+**Below is a screenshot of the dataset after cleanup.**
 
 ![Service request dataset after cleanup](<datasetaftercleaningTHISONE.png>)<br>
 *Figure 2: This screenshot shows the dataset after it has been cleaned.*
