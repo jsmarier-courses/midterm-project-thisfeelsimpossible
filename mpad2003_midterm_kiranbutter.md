@@ -57,47 +57,28 @@ One question that arises when examining the raw data is **“Which ward has the 
 These three columns are analyzed further, along with the rest of the dataset. 
 
 
-
-**Here are examples of functions and lines of code put in grey boxes:**
-
-1. If you name a function, put it between "angled" quotation marks like this: `IMPORTHTML`.
-1. If you want to include the entire line of code, do the same thing, albeit with your entire code: `=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)`.
-1. Alternatively, you can put your code in an independent box using the template below:
-
-``` r
-=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
-```
-This also shows how to create an ordered list. Simply put `1.` before each item.
-
 ## 3. Understanding Data
 
 ### 3.1. VIMO Analysis
 
-Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
+The **VIMO** analysis is a method used to ensure the quality, accuracy and correctness of a given dataset. For a dataset to be accurate, the data values must be valid (not blank or missing and within a valid range) and correct (Statistics Canada, 2020, 1:43). **VIMO** is an acronym that stands for **valid**, **invalid**, **missing** and **outlier values**, which is how the dataset will be assessed.
 
-Insert text here.
+For this analysis, columns A, C and J will be assessed since they are key to ‘’answer‘’ to our question. 
 
-Support your claims by citing relevant sources. Please follow [APA guidelines for in-text citations](https://apastyle.apa.org/style-grammar-guidelines/citations).
+**Valid Values**
 
-**For example:**
+The first step in the **VIMO** analysis is to assess the **validity**, ensuring values are correct and accurate. 
+Columns A and C contain valid values since there are no duplicate service request IDs, and the types are within the scope of options. As for column J, it is challenging to see what data is accurate and correct given some cell information is hidden by the value ‘\N’. It may appear like an error, but I assume it was intentional. According to the City of Ottawa (2024b), the address, latitude and longitude columns only display information for public service requests to avoid publishing personal information. However, it does not mention so for the ward column; therefore, we will assume that ‘\N’ means non-applicable instead of private information. 
 
-As Cairo (2016) argues, a data visualization should be truthful...
+**Invalid** and **Missing Values**
 
+**Invalid** values are impossible and cannot register as valid in the given context (Statistics Canada, 2020, 1:52). We already determined that columns A and C are valid– but column J’s non-applicable problem still stands. Since we cannot render these ‘\N’ values invalid because of their unknown content, it is better to assess them as **missing**, where a variable is left blank, and we must evaluate the remaining data (Statistics Canada, 2020, 2:06). 
 
-The VIMO analysis is a method used to ensure the quality, accuracy and correctness of a given dataset. In order for a dataset to be accurate, the data values must be valid (not blank or missing and within a valid range) and correct (insert cites). VIMO is an acronym that stands for valid, invalid, missing and outlier values, which is how the dataset will be assessed.
+**Outlier Values**
 
-As for our dataset, it is challenging to see what data is accurate and correct given the information that is hidden. At first glance, it may seem like an error with the dataset with plenty of cells containing an \N, but that is done on purpose. For the columns containing the address, latitude and longitude, according to the City of Ottawa page, the field is only displayed for public service requests, since private service requests can display personal information (insert cites). Given that our dataset is limited, the VIMO analysis will consequently be limited to the information available. 
-
-The first step in the VIMO analysis is to assess the validity. Valid values are variables that are correct and accurate within the dataset. The service requests ID’s, status, type, description, opened dates and channel columns seem to contain correct data within a range. When the latitude, longitude and address are available, they are valid as well and point to the Ontario and Quebec region (insert cite). 
-
-
-Invalid values are values that are impossible, meaning they cannot register as valid in that context (insert cites maybe?). In this case, we cannot determine whether the hidden data represented by \N is invalid since we do not know its content. While the closed date and ward columns do contain hidden data and were not specified to in the dataset’s background, they could be deemed as non-applicable even. Rather than assessing that these values are invalid, it is better to assess them as missing.
+**Outlier** values are extremely small or large to relative expectations (Statistics Canada, 2020, 2:17). I would argue there are no outlier values. While the service request IDs are lengthy, it is a typical size for IDs. Column C has values that reflect the same types and no other value outside the assigned options. Column J (besides the ones that contain ‘\N’) are all within 1 - 24, the number of wards in the Ottawa region (City of Ottawa, n.d.-b).
 
 
-Missing values is when the variable is left blank (insert cites) and we must evaluate what is left. Any \N in the data set is considered to be missing values since it is hidden and we do not know its content. Meaning that the unknown ward values are considered to be missing, along with any \N placed in the dataset in general (the closed dates, address, longitude and latitude). 
-
-
-Outlier values are values that are extremely small or large to relative expectations (insert cites). I would argue that there are no outlier values seen in the dataset. While the service request ID’s are lengthy, it is typical for ID’s to be lengthy. Column B has values that are either resolved, cancelled or active, and no other value that is out of the range, and for Column J, the wards (besides the ones that contain \N) are all within 1 - 24, which is the number of wards in the Ottawa region (insert cites). 
 
 ### 3.2. Cleaning Data
 
