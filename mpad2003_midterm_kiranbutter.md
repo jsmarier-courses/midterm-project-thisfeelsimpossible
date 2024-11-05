@@ -5,26 +5,10 @@
 
 # Midterm Project: Exploratory Data Analysis (EDA)
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one. - yo did I fix the issue?
-
-## Foreword
-
-For this assignment, you must extract data from a dataset provided by the instructor. You must then clean and analyze the data, create exploratory charts/visualizations, and find a potential story idea. Your assignment must clearly detail your process. You are expected to write about 1500-2000 words, and to include several screen captures showing the different steps you went through. Your assignment must be written with the Markdown format and submitted on GitHub Classroom.
-
-I have been assigning different versions of this project to my digital journalism and data storytelling students for a few years now. Its structure was inspired by the main sections/chapters of [*The Data Journalism Handbook*](https://datajournalism.com/read/handbook/one/). This version was further inspired by the [Key Capabilities in Data Science](https://extendedlearning.ubc.ca/programs/key-capabilities-data-science) program offered by the University of British Columbia (UBC).
-
-**Here are some useful resources for this assignment:**
-
-* [GitHub's *Basic writing and formatting syntax* page](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [The template repository for this assignment in case you delete something by mistake](https://github.com/jsmarier/jou4100_jou4500_mpad2003_project2_template)
-
-Did you notice how to create a hyperlink? In Markdown, we put the clickable text between square brackets and the actual URL between parentheses.
-
-And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Introduction
 
-This assignment aims to extract, clean and analyze a provided dataset, create a graph and find a potential story from the findings. The dataset is a subset of a City of Ottawa larger dataset, called ‘2024 Service Requests”, found on the City of Ottawa’s open data portal, last updated on October 3rd, 2024 and then featured 251,714 entries of service requests from various means: contact or client service centres, email and web-based service portals. According to the City of Ottawa (2024b), “the data provides a summary of requests for service that require action by City staff. Data is presented by the ward and shows the responsible City department and service description.” The service requests data containing the request type, description, status, address, longitude, latitude and ward. This analysis is conducted in 4 sections: getting data, understanding data (VIMO analysis, cleaning data, exploratory data analysis), potential story and conclusion.
+This assignment aims to extract, clean and analyze a provided dataset, create a graph and find a potential story from the findings. The dataset is a subset of a City of Ottawa larger dataset, called ‘2024 Service Requests”, found on the City of Ottawa’s open data portal, last updated on October 3rd, 2024 and then featured 251,714 entries of service requests from various means: contact or client service centres, email and web-based service portals. According to the City of Ottawa (2024b), “the data provides a summary of requests for service that require action by City staff. Data is presented by the ward and shows the responsible City department and service description.” The service requests data containing the request type, description, status, address, longitude, latitude and ward. This analysis is conducted in four sections: getting data, understanding data (VIMO analysis, cleaning data, exploratory data analysis), potential story and conclusion.
 
 
 [Link to the original dataset on Open Ottawa](https://open.ottawa.ca/documents/65fe42e2502d442b8a774fd3d954cac5/about).
@@ -44,7 +28,7 @@ Instructions to import the data into Google Sheets:
 
 **This is a screenshot of the dataset right after it has been imported.** 
 
-![Service request dataset after it has been imported](<datasetwhenfirstimportedUSETHISONE (1).png>)</br>
+![Service request dataset after it has been imported](<datasetwhenfirstimportedUSETHISONE (1).png>)<br>
 *Figure 1: This screenshot shows the dataset after it has been imported*.
 
 
@@ -141,36 +125,24 @@ What this did was freeze that specific row, so while we scroll, the column label
 
 ### 3.3. Exploratory Data Analysis (EDA)
 
-My thought process in creating the chart was to originally show how many requests wards receive per type of request, but since the dataset has been cleaned and modified, that question has now changed. I limited the data to only focus on public requests, or rows that display information instead of all 28935 rows since I did not want to overload the data onto the chart.
-Limiting to public requests has left four types from the original 11: roads and transportation, city facilities, recreation and culture and social community service. The modification of only displaying public requests now allows for a significantly smaller portion of the data to be graphed, making it easier for the viewer to grasp. Instead of how many requests wards receive per type, my thought process was now how many public requests wards receive per the four types (assuming they are public) to highlight what issues they can solve from the requests.
-
-As for creating the graph, I chose a stacked column chart since it is best to show what requests per type contribute to the overall total of ward’s requests. 
-
-To create the pivot table:
-Insert > Pivot Table
-Then, add Ward under Rows
-Type under Columns 
-And
-Service request ID under values. Ensure that the summarize by is set to COUNTA.
-
-To create the graph
-Insert > Chart, then select stacked column chart, and it should autmoatcailly create the graph
+My goal was to originally show how many requests wards receive per request type, but since the dataset has been cleaned and modified to remove non-applicable information, the goal is now: **“Which ward has the most requests per the four public types: roads and transportation, city facilities, recreation and culture and social community service?”**
+I chose a stacked column chart since it best illustrates how each request type contributes to the overall total per ward. Furthermore, according to Statistics Canada (2021), stacked bar charts are difficult to analyze if there are too many categories in each stack,” so limiting the chart to four options made it easier to analyze the four request types. Additionally, using one graph rather than four separate to present the data is supported by Cleveland and McGill’s hierarchy and elementary perceptual tasks, allowing the viewer to digest and compare the values with ease (Cairo, 2016, ch. 5). 
+The potential story is that some wards are well, while others need improvement in the four request types. Immediately, the amount of requests for roads and transportation is noticeable, with all wards experiencing issues. Another noticeable variable is the lack of city facilities requests, with only wards 18 and 23 experiencing requests. As for social community service, some wards vary from a lot to little to none, and all wards received a handful of recreation and culture requests. Overall, the story is to highlight the work needed in these wards.
 
 
-Furthermore, according to Statistics Canada, “stacked bar charts can be very difficult to analyze if too many items are in each stack” (insert cite), but since I limited the chart to four types, there would be less difficulty in analyzing the number of requests. Additionally, since all the information is in one graph, rather than four graphs to depict the requests per type, according to Cleveland and Mcgill’s hierarchy of elementary perceptual tasks, it allows for the viewer to digest the information easily and compare the values (insert cite) 
 
-These variables can tell a story of the areas that are well, and the areas that need work in the four types of the wards. Immediately, the amount of requests for roads and transportation is noticeable. It seems that all wards one to 24 receive a lot of issues when it comes to road or transportation. Another noticeable variable is the lack of city facilities requests. Only wards 18 and 23 have received requests on city facilities, which can potentially indicate that wards 18 and 23 have work to do revolving around their city facilities, while every other ward is performing well. As for social community service, some wards have a lot of requests and others have little to none at all; this highlights the type of work that needs to be done in those wards. As for recreation and culture, every ward seems to receive a handful of requests.
+**Screen capture of the pivot table:**
+
+![Pivot table with values ward as rows, type as columns and service request IDs as values.](pivtotable.png)<br>
+*Figure 3: This screenshot shows the pivot table, with values ward (rows), type (columns) and service request ID (values)*.
 
 
-**This section should include a screen capture of your pivot table, like so:**
+**Screen capture of the exploratory chart:**
 
-![](pivot-table-screen-capture.png)<br>
-*Figure 2: This pivot table shows...*
+![Stacked bar chart of the number of requests per four types.](Number of Service Requests per Four Public Request Types.png)<br>
+*Figure 4: This screenshot shows the graph made from the pivot table. It shows the number of requests per four public request types*.
 
-**This section should also include a screen capture of your exploratory chart, like so:**
 
-![](chart-screen-capture.png)<br>
-*Figure 3: This exploratory chart shows...*
 
 ## 4. Potential Story
 
