@@ -21,10 +21,10 @@ This assignment aims to extract, clean and analyze a provided dataset, create a 
 
 Instructions to import the data into Google Sheets: 
 
-1. Right-click the link, click “Save link as…” and save the CSV file to your computer. It will save as a text file. 
-2. Go to Google Sheets, File > Import, then upload the dataset text file. 
-3. Once uploaded, select the comma for the separator type, and click import data. 
-4. Once imported, the message, ‘Success! File imported. Open now >>” will appear. Click on the “Open now >>” blue hyperlink, and it will take you to the imported dataset. 
+1. Right-click the link, click **“Save link as…”** and save the CSV file to your computer. It will save as a text file. 
+2. Open Google Sheets, **File > Import**, then upload the dataset text file. 
+3. Once uploaded, select the comma for the separator type, and click **Import data**. 
+4. Once imported, the message, **"Success! File imported. Open now >>"** will appear. Click on the **“Open now >>”** blue hyperlink, and it will take you to the imported dataset. 
 
 **Screen capture of the dataset right after it has been imported:** 
 
@@ -70,7 +70,7 @@ Columns A and C contain valid values since there are no duplicate service reques
 **ADDING FILTERS** 
 
 Since there are a lot of cases of non-applicable/hidden information, to clear the dataset, I only focused on requests that have public information easily available to us. 
-I cleared every instance of \N in the address column (and thus, the longitude, latitude and ward column) using the “Create a filter” option in Google Sheets. 
+I cleared every instance of \N in the address column (and thus, the longitude, latitude and ward column) using the **“Create a filter”** option in Google Sheets. 
 
 **Instructions** (Marier, 2021, 6:03): 
 
@@ -86,17 +86,17 @@ This makes it easier to create charts of public requests since we do not have to
 **`SPLIT` FUNCTION**
 
 Since the dataset is from the City of Ottawa, it included both English and French, but considering that English is more widely known, I removed the French in the dataset to be more clear. 
-The French is in the description column. To remove the French, I used the `SPLIT` function; a function used to split text based on a separator into its own parts.
+The French is in the description column. To remove the French, I used the **`SPLIT`** function; a function used to split text based on a separator into its own parts.
 
 
 **Instructions** (Marier, 2021, 13:00;  Google, n.d.):
 
 1. Right-click column D, and click **Insert 1 column right**. You will need to do this twice. 
-2. In E2, initialize the `ARRAYFORMULA` function by typing `=ARRAYFORMULA` (we will use `ARRAYFORMULA` to fill up the entire column, instead of using the fill handle).
+2. In E2, initialize the **`ARRAYFORMULA`** function by typing **`=ARRAYFORMULA`** (we will use **`ARRAYFORMULA`** to fill up the entire column, instead of using the fill handle).
 3. Type in the brackets: 
 ```r
 SPLIT(D2:D4393, “|”)
-``` 
+```
 where the range is D2:D4393 and delimiter is “|”
 
 *Note: it is only 4393 rows instead of 28935 since we filtered the data.*
@@ -131,7 +131,7 @@ What this did was freeze that specific row, so while we scroll, the column label
 My goal was to originally show how many requests wards receive per request type, but since the dataset has been cleaned and modified to remove non-applicable information, the goal is now: **“Which ward has the most requests per the four public types: roads and transportation, city facilities, recreation and culture and social community service?”**
 
 I chose a stacked column chart since it best illustrates how each request type contributes to the overall total per ward. Furthermore, according to Statistics Canada (2021), stacked bar charts are difficult to analyze if there are too many categories in each stack,” so limiting the chart to four options made it easier to analyze the four request types. Additionally, using one graph rather than four separate to present the data is supported by Cleveland and McGill’s hierarchy and elementary perceptual tasks, allowing the viewer to digest and compare the values with ease (Cairo, 2016, ch. 5).
- 
+
 The potential story is that some wards are well, while others need improvement in the four request types. Immediately, the amount of requests for roads and transportation is noticeable, with all wards experiencing issues. Another noticeable variable is the lack of city facilities requests, with only wards 18 and 23 experiencing requests. As for social community service, some wards vary from a lot to little to none, and all wards received a handful of recreation and culture requests. Overall, the story is to highlight the work needed in these wards.
 
 
