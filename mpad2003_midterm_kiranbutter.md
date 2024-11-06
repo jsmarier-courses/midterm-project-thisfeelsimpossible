@@ -19,7 +19,7 @@ This assignment aims to extract, clean and analyze a provided dataset, create a 
 
 ## 2. Getting Data
 
-Instructions to import the data into Google Sheets: 
+**Instructions to import the data into Google Sheets**: 
 
 1. Right-click the link, click **“Save link as…”** and save the CSV file to your computer. It will save as a text file. 
 2. Open Google Sheets, **File > Import**, then upload the dataset text file. 
@@ -77,7 +77,7 @@ I cleared every instance of \N in the address column (and thus, the longitude, l
 1. Click **Data** >  **Create a filter**. 
 2. Click the **filter button (represented by three horizontal lines)** next to the address column.
 3. Click on **Filter by condition**, select **‘Text does not contain’**, and input **‘\N’** 
-4. Click **OK** at the bottom in green. 
+4. Click **OK** at the bottom. 
 5. **Copy and paste** the entire dataset by clicking the gray box in the far left corner above the row numbers to apply the changes.
 
 This makes it easier to create charts of public requests since we do not have to incorporate 28935 rows of data. Instead, we can focus on data that is available to us (the public requests).
@@ -91,7 +91,7 @@ The French is in the description column. To remove the French, I used the **`SPL
 
 **Instructions** (Marier, 2021, 13:00;  Google, n.d.):
 
-1. Right-click column D, and click **Insert 1 column right**. You will need to do this twice. 
+1. Right-click column D > **Insert 1 column right**. You will need to do this twice. 
 2. In E2, initialize the **`ARRAYFORMULA`** function by typing **`=ARRAYFORMULA`** (we will use **`ARRAYFORMULA`** to fill up the entire column, instead of using the fill handle).
 3. Type in the brackets: 
 ```r
@@ -102,7 +102,7 @@ where the range is D2:D4393 and delimiter is “|”
 *Note: it is only 4393 rows instead of 28935 since we filtered the data.*
 
 4. Hit **Enter** on your keyboard.
-5. **Copy and Paste** the entire English column (column E)
+5. **Copy and Paste** the entire English column (column E).
 6. Right-click and go to **Paste Special** > **Values only** (allows us to remove the French description (column F) and mixed English and French description columns (column D)). 
 
 
@@ -112,7 +112,7 @@ Freezing columns and rows is useful for scrolling through the dataset and keepin
 
 **Instructions** (Marier, 2021, 5:42):
 
-1. Click the number of where the column labels are (usually row one, thus the number one on the far right)
+1. Click the number of where the column labels are (usually row one, thus the number one on the far right).
 2. Click **View** > **Freeze** > **Up to 1 row**.
 
 What this did was freeze that specific row, so while we scroll, the column label will follow along.
