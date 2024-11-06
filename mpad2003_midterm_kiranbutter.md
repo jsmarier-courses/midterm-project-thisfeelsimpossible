@@ -66,6 +66,7 @@ Columns A and C contain valid values since there are no duplicate service reques
 
 ### 3.2. Cleaning Data
 
+
 **ADDING FILTERS** 
 
 Since there are a lot of cases of non-applicable/hidden information, to clear the dataset, I only focused on requests that have public information easily available to us. 
@@ -73,10 +74,10 @@ I cleared every instance of \N in the address column (and thus, the longitude, l
 
 **Instructions** (Marier, 2021, 6:03): 
 
-1. Click Data >  Create a filter. 
+1. Click **Data** >  **Create a filter**. 
 2. Click the filter button (represented by three horizontal lines) next to the address column.
-3. Click on Filter by condition, select ‘Text does not contain’, and input ‘\N’ 
-4. Click  OK at the bottom in green. 
+3. Click on **Filter by condition**, select **‘Text does not contain’**, and input **‘\N’** 
+4. Click **OK** at the bottom in green. 
 5. Copy and paste the entire dataset by clicking the gray box in the far left corner to apply the changes.
 
 This makes it easier to create charts of public requests since we do not have to incorporate 28935 rows of data. Instead, we can focus on data that is available to us (the public requests).
@@ -90,18 +91,19 @@ The French is in the description column. To remove the French, I used the `SPLIT
 
 **Instructions** (Marier, 2021, 13:00;  Google, n.d.):
 
-1. Add two columns to the right by right-clicking Column D. 
+1. Right-click column D, and click **Insert 1 column right**. You will need to do this twice. 
 2. In E2, initialize the `ARRAYFORMULA` function by typing `=ARRAYFORMULA` (we will use `ARRAYFORMULA` to fill up the entire column, instead of using the fill handle).
 3. Type in the brackets: 
 ```r
 SPLIT(D2:D4393, “|”)
 ``` 
 where the range is D2:D4393 and delimiter is “|”
+
 *Note: it is only 4393 rows instead of 28935 since we filtered the data.*
 
-4. Hit Enter.
+4. Hit Enter on your keyboard.
 5. Copy and Paste the entire English column (column E)
-6. Right-click and go to Paste Special > Values only (allows us to remove the French description (column F) and mixed English and French description columns (column D)). 
+6. Right-click and go to **Paste Special** > **Values only** (allows us to remove the French description (column F) and mixed English and French description columns (column D)). 
 
 
 **FREEZING COLUMNS**
@@ -111,7 +113,7 @@ Freezing columns and rows is useful for scrolling through the dataset and keepin
 **Instructions** (Marier, 2021, 5:42):
 
 1. Click the number of where the column labels are (usually row one, thus the number one on the far right)
-2. Click View > Freeze > Up to 1 row.
+2. Click **View** > **Freeze** > **Up to 1 row**.
 
 What this did was freeze that specific row, so while we scroll, the column label will follow along.
 
@@ -128,7 +130,8 @@ What this did was freeze that specific row, so while we scroll, the column label
 
 My goal was to originally show how many requests wards receive per request type, but since the dataset has been cleaned and modified to remove non-applicable information, the goal is now: **“Which ward has the most requests per the four public types: roads and transportation, city facilities, recreation and culture and social community service?”**
 
-I chose a stacked column chart since it best illustrates how each request type contributes to the overall total per ward. Furthermore, according to Statistics Canada (2021), stacked bar charts are difficult to analyze if there are too many categories in each stack,” so limiting the chart to four options made it easier to analyze the four request types. Additionally, using one graph rather than four separate to present the data is supported by Cleveland and McGill’s hierarchy and elementary perceptual tasks, allowing the viewer to digest and compare the values with ease (Cairo, 2016, ch. 5). 
+I chose a stacked column chart since it best illustrates how each request type contributes to the overall total per ward. Furthermore, according to Statistics Canada (2021), stacked bar charts are difficult to analyze if there are too many categories in each stack,” so limiting the chart to four options made it easier to analyze the four request types. Additionally, using one graph rather than four separate to present the data is supported by Cleveland and McGill’s hierarchy and elementary perceptual tasks, allowing the viewer to digest and compare the values with ease (Cairo, 2016, ch. 5).
+ 
 The potential story is that some wards are well, while others need improvement in the four request types. Immediately, the amount of requests for roads and transportation is noticeable, with all wards experiencing issues. Another noticeable variable is the lack of city facilities requests, with only wards 18 and 23 experiencing requests. As for social community service, some wards vary from a lot to little to none, and all wards received a handful of recreation and culture requests. Overall, the story is to highlight the work needed in these wards.
 
 
@@ -146,16 +149,17 @@ The potential story is that some wards are well, while others need improvement i
 
 ## 4. Potential Story
 
-Gathering more data or variables, such as the status (resolved, cancelled, active) reflected in the original dataset can be useful for telling the story of which wards need improvements and where they perform well.
-While we do see how many requests are made, we cannot see if the request was resolved, cancelled or is active, so we cannot know if areas are being improved if requests were cancelled or if they are currently being worked on. 
-To gather insight, we could interview the councillors respective to their ward to see how requests get handled accordingly. For example, we saw that only wards 18 and 23 have city facilities requests from our graph, so we can interview councillors Marty Carr and Allan Hubley to see why there are instances of such (City of Ottawa, n.d.-a).
+Gathering more data or variables, such as the status (resolved, cancelled, active) reflected in the original dataset can be useful for telling the story of which wards need improvements and where they perform well. While we do see how many requests are made, we cannot see if the request was resolved, cancelled or is active, so we cannot know if areas are being improved if requests were cancelled or if they are currently being worked on. To gather insight, we could interview the councillors respective to their ward to see how requests get handled accordingly. For example, we saw that only wards 18 and 23 have city facilities requests from our graph, so we can interview councillors Marty Carr and Allan Hubley to see why there are instances of such (City of Ottawa, n.d.-a).
+
 Furthermore, digging deeper into Ottawa’s funds can determine why some requests are not fulfilled. On August 8th, 2024, which is recent to the date of service requests in the dataset (August 1st), there was a statement from Mayor Mark Sutcliffe that Ottawa is facing a financial crisis. Sutcliffe claims “Our city is facing unprecedented financial challenges that are not of our making” and that “this can’t continue or we will face historic challenges in our next budget” (City of Ottawa, 2024a). This statement highlights that there’s a possibility that some areas cannot be improved at the moment since there is a lack of budget or income, which will add to the story.
 
 
 ## 5. Conclusion
 
 My thought process throughout this assignment was to clean the data to create a graph easily. The most challenging part would be cleaning the data. It was difficult to find what could be edited considering that I found all the data too important, hence why I only removed the ‘\N’ since it served no purpose– I felt everything else served some importance though. I identified a gap in my knowledge when it came to applying the cleaning techniques since the majority of time was spent searching for cleaning techniques online and figuring out how to remove, edit, etc. on Google Sheets. 
+
 The rewarding part was creating the graph based on my cleaned dataset. Knowing that I had made a graph out of an idea in mind from the data that I had cleaned and making connections was rewarding since I felt I was presenting my own vision of a portion of the data. It made me feel like I was cut out for this work involving graphs, data, etc. 
+
 What I could have done differently is implement more cleaning methods. I felt that I did not totally explore what other data I could edit–I played it safe by keeping the majority of the data. I could have removed data that did not serve my vision or used other functions like `=CONCATENATE` to merge it with other data. That way, it would have been a more honest and experimental attempt to clean data.
 
 
