@@ -23,7 +23,7 @@ Instructions to import the data into Google Sheets:
 
 1. Right-click the link, click **“Save link as…”** and save the CSV file to your computer. It will save as a text file. 
 2. Open Google Sheets, **File > Import**, then upload the dataset text file. 
-3. Once uploaded, select the comma for the separator type, and click **Import data**. 
+3. Once uploaded, select the **comma** for the **separator type**, and click **Import data**. 
 4. Once imported, the message, **"Success! File imported. Open now >>"** will appear. Click on the **“Open now >>”** blue hyperlink, and it will take you to the imported dataset. 
 
 **Screen capture of the dataset right after it has been imported:** 
@@ -75,10 +75,10 @@ I cleared every instance of \N in the address column (and thus, the longitude, l
 **Instructions** (Marier, 2021, 6:03): 
 
 1. Click **Data** >  **Create a filter**. 
-2. Click the filter button (represented by three horizontal lines) next to the address column.
+2. Click the **filter button (represented by three horizontal lines)** next to the address column.
 3. Click on **Filter by condition**, select **‘Text does not contain’**, and input **‘\N’** 
 4. Click **OK** at the bottom in green. 
-5. Copy and paste the entire dataset by clicking the gray box in the far left corner to apply the changes.
+5. **Copy and paste** the entire dataset by clicking the gray box in the far left corner above the row numbers to apply the changes.
 
 This makes it easier to create charts of public requests since we do not have to incorporate 28935 rows of data. Instead, we can focus on data that is available to us (the public requests).
 
@@ -101,8 +101,8 @@ where the range is D2:D4393 and delimiter is “|”
 
 *Note: it is only 4393 rows instead of 28935 since we filtered the data.*
 
-4. Hit Enter on your keyboard.
-5. Copy and Paste the entire English column (column E)
+4. Hit **Enter** on your keyboard.
+5. **Copy and Paste** the entire English column (column E)
 6. Right-click and go to **Paste Special** > **Values only** (allows us to remove the French description (column F) and mixed English and French description columns (column D)). 
 
 
@@ -151,7 +151,7 @@ The potential story is that some wards are well, while others need improvement i
 
 Gathering more data or variables, such as the status (resolved, cancelled, active) reflected in the original dataset can be useful for telling the story of which wards need improvements and where they perform well. While we do see how many requests are made, we cannot see if the request was resolved, cancelled or is active, so we cannot know if areas are being improved if requests were cancelled or if they are currently being worked on. To gather insight, we could interview the councillors respective to their ward to see how requests get handled accordingly. For example, we saw that only wards 18 and 23 have city facilities requests from our graph, so we can interview councillors Marty Carr and Allan Hubley to see why there are instances of such (City of Ottawa, n.d.-a).
 
-Furthermore, digging deeper into Ottawa’s funds can determine why some requests are not fulfilled. On August 8th, 2024, which is recent to the date of service requests in the dataset (August 1st), there was a statement from Mayor Mark Sutcliffe that Ottawa is facing a financial crisis. Sutcliffe claims “Our city is facing unprecedented financial challenges that are not of our making” and that “this can’t continue or we will face historic challenges in our next budget” (City of Ottawa, 2024a). This statement highlights that there’s a possibility that some areas cannot be improved at the moment since there is a lack of budget or income, which will add to the story.
+Furthermore, digging deeper into Ottawa’s funds can determine why some requests are not fulfilled. On August 8th, 2024, which is recent to the date of service requests in the dataset (August 1st), there was a statement from Mayor Mark Sutcliffe that Ottawa was facing a financial crisis. Sutcliffe claims “Our city is facing unprecedented financial challenges that are not of our making” and that “this can’t continue or we will face historic challenges in our next budget” (City of Ottawa, 2024a). This statement highlights that there’s a possibility that some areas cannot be improved at the moment since there is a lack of budget or income, which will add to the story.
 
 
 ## 5. Conclusion
