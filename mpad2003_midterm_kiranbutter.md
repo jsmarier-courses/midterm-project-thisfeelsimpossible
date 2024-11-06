@@ -29,7 +29,7 @@ Instructions to import the data into Google Sheets:
 **Screen capture of the dataset right after it has been imported:** 
 
 ![Service request dataset after it has been imported](<datasetwhenfirstimportedUSETHISONE (1).png>)<br>
-*Figure 1: This screenshot shows the dataset after it has been imported*.
+*Figure 1: This screen capture shows the dataset after it has been imported*.
 
 
 [Link to the Google Sheet data spreadsheet](https://docs.google.com/spreadsheets/d/1eOZ1uVapeKvocDCgMW5fZFrOu2O9v17iskftLEeP6RE/edit?usp=sharing).
@@ -71,7 +71,7 @@ Columns A and C contain valid values since there are no duplicate service reques
 Since there are a lot of cases of non-applicable/hidden information, to clear the dataset, I only focused on requests that have public information easily available to us. 
 I cleared every instance of \N in the address column (and thus, the longitude, latitude and ward column) using the “Create a filter” option in Google Sheets. 
 
-Instructions (Marier, 2021, 6:03): 
+**Instructions** (Marier, 2021, 6:03): 
 
 1. Click Data >  Create a filter. 
 2. Click the filter button (represented by three horizontal lines) next to the address column.
@@ -88,7 +88,7 @@ Since the dataset is from the City of Ottawa, it included both English and Frenc
 The French is in the description column. To remove the French, I used the `SPLIT` function; a function used to split text based on a separator into its own parts.
 
 
-Instructions (Marier, 2021, 13:00;  Google, n.d.):
+**Instructions** (Marier, 2021, 13:00;  Google, n.d.):
 
 1. Add two columns to the right by right-clicking Column D. 
 2. In E2, initialize the `ARRAYFORMULA` function by typing `=ARRAYFORMULA` (we will use `ARRAYFORMULA` to fill up the entire column, instead of using the fill handle).
@@ -97,6 +97,7 @@ Instructions (Marier, 2021, 13:00;  Google, n.d.):
 SPLIT(D2:D4393, “|”)
 ``` 
 where the range is D2:D4393 and delimiter is “|”
+*Note: it is only 4393 rows instead of 28935 since we filtered the data.*
 
 4. Hit Enter.
 5. Copy and Paste the entire English column (column E)
@@ -107,7 +108,7 @@ where the range is D2:D4393 and delimiter is “|”
 
 Freezing columns and rows is useful for scrolling through the dataset and keeping track of the column or row you are in. This is useful, considering the dataset is large. 
 
-Instructions (Marier, 2021, 5:42):
+**Instructions** (Marier, 2021, 5:42):
 
 1. Click the number of where the column labels are (usually row one, thus the number one on the far right)
 2. Click View > Freeze > Up to 1 row.
@@ -118,7 +119,7 @@ What this did was freeze that specific row, so while we scroll, the column label
 **Screen capture of the dataset after cleanup:**
 
 ![Service request dataset after cleanup](<datasetaftercleaningTHISONE.png>)<br>
-*Figure 2: This screenshot shows the dataset after it has been cleaned.*
+*Figure 2: This screen capture shows the dataset after it has been cleaned.*
 
 
 
@@ -126,6 +127,7 @@ What this did was freeze that specific row, so while we scroll, the column label
 ### 3.3. Exploratory Data Analysis (EDA)
 
 My goal was to originally show how many requests wards receive per request type, but since the dataset has been cleaned and modified to remove non-applicable information, the goal is now: **“Which ward has the most requests per the four public types: roads and transportation, city facilities, recreation and culture and social community service?”**
+
 I chose a stacked column chart since it best illustrates how each request type contributes to the overall total per ward. Furthermore, according to Statistics Canada (2021), stacked bar charts are difficult to analyze if there are too many categories in each stack,” so limiting the chart to four options made it easier to analyze the four request types. Additionally, using one graph rather than four separate to present the data is supported by Cleveland and McGill’s hierarchy and elementary perceptual tasks, allowing the viewer to digest and compare the values with ease (Cairo, 2016, ch. 5). 
 The potential story is that some wards are well, while others need improvement in the four request types. Immediately, the amount of requests for roads and transportation is noticeable, with all wards experiencing issues. Another noticeable variable is the lack of city facilities requests, with only wards 18 and 23 experiencing requests. As for social community service, some wards vary from a lot to little to none, and all wards received a handful of recreation and culture requests. Overall, the story is to highlight the work needed in these wards.
 
@@ -134,13 +136,13 @@ The potential story is that some wards are well, while others need improvement i
 **Screen capture of the pivot table:**
 
 ![Pivot table with values ward as rows, type as columns and service request IDs as values.](pivtotable.png)<br>
-*Figure 3: This screenshot shows the pivot table, with values ward (rows), type (columns) and service request ID (values)*.
+*Figure 3: This screen capture shows the pivot table, with values ward (rows), type (columns) and service request ID (values)*.
 
 
 **Screen capture of the exploratory chart:**
 
 ![Stacked bar chart of the number of requests per four types.](<Number of Service Requests per Four Public Request Types.png>)
-*Figure 4: This screenshot shows the graph made from the pivot table. It shows the number of requests per four public request types*.
+*Figure 4: This screen capture shows the graph made from the pivot table. It shows the number of requests per four public request types*.
 
 ## 4. Potential Story
 
